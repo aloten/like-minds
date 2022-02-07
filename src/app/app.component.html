@@ -7,8 +7,11 @@
     <title>Document</title>
   </head>
   <body>
-    <div *ngFor="let user of users">
-      <div>{{ user.firstName }} {{ user.lastName }}</div>
+    <div class="users" *ngFor="let user of users">
+      <div class="user">
+        <img src="{{ user?.imageUrl }}" alt="" />
+        {{ user.firstName }} {{ user.lastName }}
+      </div>
     </div>
   </body>
 </html>
